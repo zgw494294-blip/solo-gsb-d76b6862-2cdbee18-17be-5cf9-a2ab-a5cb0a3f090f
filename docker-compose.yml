@@ -1,0 +1,8 @@
+services:
+  lap-judge:
+    build: .
+    image: lap-judge:latest
+    container_name: lap-judge
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
